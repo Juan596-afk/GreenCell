@@ -5,11 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GreenCell - Bioenergy Info</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .info-box {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .definition, .benefits-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo"></div>
-    <h1>GreenCell</h1>
+    <div class="logo" style="width: 40px; height: 40px; background-color: green; display: inline-block; vertical-align: middle; border-radius: 5px;"></div>
+    <h1 style="display: inline-block; margin-left: 10px; vertical-align: middle;">GreenCell</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="login.html">Login</a>
@@ -25,33 +39,35 @@
     <button onclick="searchTopics()">Search</button>
   </section>
 
-  <section class="bioenergy-info">
+  <section class="bioenergy-info info-box">
     <h2>Bioenergy</h2>
     <p class="definition">
       Bioenergy is a form of renewable energy derived from biomass, which includes recently living organic materials such as plants, wood, and agricultural waste. It can be used to produce transportation fuels, heat, electricity, and other products. Bioenergy plays a crucial role in reducing greenhouse gas emissions and reliance on fossil fuels, making it an essential component of sustainable energy solutions.
     </p>
   </section>
 
-  <section class="benefits-section">
+  <section class="benefits-section info-box">
     <h2>Benefits</h2>
     <p class="benefits-text">
       Abundant and renewable bioenergy can contribute to a more secure and economically sound future by:
-      <ul>
-        <li>Supplying domestic energy sources</li>
-        <li>Reducing U.S. dependence on foreign oil</li>
-        <li>Generating U.S. jobs</li>
-        <li>Revitalizing rural economies</li>
-      </ul>
-
-      The U.S. Department of Energy’s 2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources concluded that the United States could triple its production of biomass to more than 1 billion tons per year and still meet demands for food, feed, fiber, and exports. Benefits under the mature-market medium scenario include:
-
-      <ul>
-        <li>U.S. farmer net market returns increase by $23 billion per year from baseline.</li>
-        <li>At $70 per dry ton, approximately 0.7 - 1.7 billion dry tons of biomass can be produced.</li>
-        <li>Purpose-grown energy crops can achieve a net flux reduction of about 18 million metric tons of CO₂.</li>
-        <li>The U.S. can triple the production of biomass, producing an estimated 60 billion gallons of low emission liquid fuels.</li>
-      </ul>
     </p>
+    <ul class="benefits-text">
+      <li>Supplying domestic energy sources</li>
+      <li>Reducing U.S. dependence on foreign oil</li>
+      <li>Generating U.S. jobs</li>
+      <li>Revitalizing rural economies</li>
+    </ul>
+
+    <p class="benefits-text">
+      The U.S. Department of Energy’s 2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources concluded that the United States could triple its production of biomass to more than 1 billion tons per year and still meet demands for food, feed, fiber, and exports. Benefits under the mature-market medium scenario include:
+    </p>
+
+    <ul class="benefits-text">
+      <li>U.S. farmer net market returns increase by $23 billion per year from baseline.</li>
+      <li>At $70 per dry ton, approximately 0.7 - 1.7 billion dry tons of biomass can be produced.</li>
+      <li>Purpose-grown energy crops can achieve a net flux reduction of about 18 million metric tons of CO₂.</li>
+      <li>The U.S. can triple the production of biomass, producing an estimated 60 billion gallons of low emission liquid fuels.</li>
+    </ul>
   </section>
 
   <footer>
